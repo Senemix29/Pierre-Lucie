@@ -63,6 +63,7 @@ public class PierreCalc extends Activity {
 		menuListeners();
         viewAtual="Menu";
 	}
+
 	public void chamaP(){
 		try{
             viewAtual="P"; cont=1;
@@ -77,6 +78,7 @@ public class PierreCalc extends Activity {
 			Mensagem("Erro","Erro:"+e);			
 		}
 	}
+
 	public void chamaPlinha(){
 
 		try{
@@ -207,6 +209,7 @@ public class PierreCalc extends Activity {
 			});
 		
 	}
+
 	public void CampoPListeners(){
 		Val_F_Plinha.addTextChangedListener(new TextWatcher() {
 			
@@ -233,6 +236,7 @@ public class PierreCalc extends Activity {
 					AvisoDivZero();
 					s.clear();
 				}
+                ValidaTexto(Val_F_Plinha, s);
 			}
 		});
 		Val_Plinha.addTextChangedListener(new TextWatcher() {
@@ -260,6 +264,7 @@ public class PierreCalc extends Activity {
 					AvisoDivZero();
 					s.clear();
 				}
+                ValidaTexto(Val_Plinha, s);
 			}
 		});
 	}
@@ -290,11 +295,7 @@ public class PierreCalc extends Activity {
 					AvisoDivZero();
 					s.clear();
 				}
-                String str = Val_F_P.getText().toString();
-                if(str.equals(".") | str.equals(",")){
-                    Mensagem("Entrada inválida","Favor, digite apenas números inteiros ou decimais separados por ponto.");
-                    s.clear();
-                }
+                ValidaTexto(Val_F_P, s);
 			}
 		});
 		Val_P.addTextChangedListener(new TextWatcher() {
@@ -320,22 +321,29 @@ public class PierreCalc extends Activity {
 					AvisoDivZero();
 					s.clear();
 				}
-                String str = Val_P.getText().toString();
-                if(str.equals(".") | str.equals(",")){
-                    Mensagem("Entrada inválida","Favor, digite apenas números inteiros ou decimais separados por ponto.");
-                    s.clear();
-                }
+                ValidaTexto(Val_P, s);
 			}
 		});
 	}
+
+    protected void ValidaTexto(EditText campos, Editable s2){
+        String str = campos.getText().toString();
+        if(str.equals(".") | str.equals(",")){
+            Mensagem("Entrada inválida","Favor, digite apenas números inteiros ou decimais separados por ponto.");
+            s2.clear();
+        }
+    }
+
     protected void MinimizaTeclado(){
         InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         //noinspection ConstantConditions
         inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
     }
+
 	protected void AvisoDivZero(){
         Mensagem("Risco de divisão por 0","Favor, inserir valores maiores ou menores que zero");
     }
+
 	public void Mensagem(String titulo, String msg){
 		AlertDialog.Builder mensagem = new AlertDialog.Builder(PierreCalc.this);
 		mensagem.setTitle(titulo);
@@ -343,6 +351,7 @@ public class PierreCalc extends Activity {
 		mensagem.setNeutralButton("OK", null);
 		mensagem.show();
 	}
+
     public void MensagemToast(String msg){
         Toast toast = Toast.makeText(getBaseContext(), msg, Toast.LENGTH_SHORT);
         toast.show();
@@ -353,11 +362,13 @@ public class PierreCalc extends Activity {
 		p = (f*f)/(p_linha - f) + f;
 		return p;
 	}
+
 	public double CalculaPlinha(double p, double f){
 		double p_linha;
 		p_linha = (f*f)/(p - f) + f;
 		return p_linha;
 	}
+
     public void Resultado(TextView Tx,String P_ou_Plinha, double f,double PimagemPvirtual,String tam, String direcao ){
         String espelho="";
         if(f>0){
