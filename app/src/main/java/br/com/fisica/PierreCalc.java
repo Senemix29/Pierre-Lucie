@@ -228,15 +228,7 @@ public class PierreCalc extends Activity {
 			
 			@Override
 			public void afterTextChanged(Editable s) {
-				if (!(s.length()==0) && !(Val_Plinha.getText().length()==0))
-					btCalcP.setEnabled(true);
-				else
-					btCalcP.setEnabled(false);
-				if(Val_F_Plinha.getText().toString().equals("0")){
-					AvisoDivZero();
-					s.clear();
-				}
-                ValidaTexto(Val_F_Plinha, s);
+                ValidaTexto(btCalcP,Val_F_Plinha,Val_Plinha,s);
 			}
 		});
 		Val_Plinha.addTextChangedListener(new TextWatcher() {
@@ -256,15 +248,7 @@ public class PierreCalc extends Activity {
 			
 			@Override
 			public void afterTextChanged(Editable s) {
-				if (!(s.length()==0) && !(Val_F_Plinha.getText().length()==0))
-					btCalcP.setEnabled(true);
-				else
-					btCalcP.setEnabled(false);
-				if(Val_Plinha.getText().toString().equals("0")){
-					AvisoDivZero();
-					s.clear();
-				}
-                ValidaTexto(Val_Plinha, s);
+                ValidaTexto(btCalcP,Val_Plinha,Val_F_Plinha,s);
 			}
 		});
 	}
@@ -287,15 +271,7 @@ public class PierreCalc extends Activity {
 			
 			@Override
 			public void afterTextChanged(Editable s) {
-				if (!(s.length()==0) && !(Val_P.getText().length()==0))
-					btCalcPlinha.setEnabled(true);
-				else
-					btCalcPlinha.setEnabled(false);
-				if(Val_F_P.getText().toString().equals("0")){
-					AvisoDivZero();
-					s.clear();
-				}
-                ValidaTexto(Val_F_P, s);
+                ValidaTexto(btCalcPlinha,Val_F_P,Val_P, s);
 			}
 		});
 		Val_P.addTextChangedListener(new TextWatcher() {
@@ -313,21 +289,21 @@ public class PierreCalc extends Activity {
 			
 			@Override
 			public void afterTextChanged(Editable s) {
-				if (!(s.length()==0) && !(Val_F_P.getText().length()==0))
-					btCalcPlinha.setEnabled(true);
-				else
-					btCalcPlinha.setEnabled(false);
-				if(Val_P.getText().toString().equals("0")){
-					AvisoDivZero();
-					s.clear();
-				}
-                ValidaTexto(Val_P, s);
+                ValidaTexto(btCalcPlinha,Val_P,Val_F_P, s);
 			}
 		});
 	}
 
-    protected void ValidaTexto(EditText campos, Editable s2){
-        String str = campos.getText().toString();
+    protected void ValidaTexto(Button bt, EditText campo1, EditText campo2, Editable s2){
+        if (!(s2.length()==0) && !(campo2.getText().length()==0))
+            bt.setEnabled(true);
+        else
+            bt.setEnabled(false);
+        if(campo1.getText().toString().equals("0")){
+            AvisoDivZero();
+            s2.clear();
+        }
+        String str = campo1.getText().toString();
         if(str.equals(".") | str.equals(",")){
             Mensagem("Entrada inválida","Favor, digite apenas números inteiros ou decimais separados por ponto.");
             s2.clear();
