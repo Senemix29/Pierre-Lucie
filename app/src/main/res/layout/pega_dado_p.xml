@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular P \n"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txLabel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite o valor de P' :" />
+
+    <EditText
+        android:id="@+id/Val_Plinha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|numberSigned|numberDecimal" >
+        
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txlabel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite o valor de F :" />
+
+    <EditText
+        android:id="@+id/Val_F_Plinha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="number|numberSigned|numberDecimal" />
+
+    <Button
+        android:id="@+id/btCalcP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular P" />
+
+    <Button
+        android:id="@+id/btVolta1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.22" >
+
+        <TextView
+            android:id="@+id/txP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

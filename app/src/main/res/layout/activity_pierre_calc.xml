@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha uma das opções abaixo." />
+
+    <Button
+        android:id="@+id/btPlinha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Calcular valor de P&apos;" />
+
+    <Button
+        android:id="@+id/btP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular valor de P"
+        android:layout_marginBottom="39dp"
+        android:layout_above="@+id/btPlinha"
+        android:layout_alignStart="@+id/btPlinha" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Desenvolvido por: Natan Ximenes" />
+
+</RelativeLayout>
