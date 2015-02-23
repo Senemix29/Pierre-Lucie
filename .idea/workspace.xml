@@ -21,7 +21,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f52697e8-64df-4583-80ba-201fcb0ffa4c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/fisica/PierreCalc.java" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/fisica/PierreCalc.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/fisica/Espelho.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ApPierreLucie.iws" />
@@ -50,31 +50,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PierreCalc.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PierreCalc.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/fisica/PierreCalc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1300578" vertical-offset="0" max-vertical-offset="3604">
-              <caret line="91" column="28" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1211" max-vertical-offset="1666">
+              <caret line="347" column="32" selection-start-line="347" selection-start-column="32" selection-end-line="347" selection-end-column="32" />
               <folding>
                 <element signature="method#onCreate#0;class#PierreCalc#0" expanded="false" />
                 <element signature="method#onBackPressed#0;class#PierreCalc#0" expanded="false" />
                 <element signature="method#inicializaObjetos#0;class#PierreCalc#0" expanded="false" />
                 <element signature="method#chamaMenu#0;class#PierreCalc#0" expanded="false" />
+                <element signature="method#chamaP#0;class#PierreCalc#0" expanded="false" />
+                <element signature="method#chamaPlinha#0;class#PierreCalc#0" expanded="false" />
                 <element signature="method#menuListeners#0;class#PierreCalc#0" expanded="false" />
-                <element signature="method#PListeners#0;class#PierreCalc#0" expanded="false" />
-                <element signature="e#3643#3759#0" expanded="true" />
-                <element signature="e#3753#3754#0" expanded="true" />
                 <element signature="method#PlinhaListeners#0;class#PierreCalc#0" expanded="false" />
-                <element signature="e#3834#4565#0" expanded="true" />
-                <element signature="e#4559#4560#0" expanded="true" />
-                <element signature="e#5144#5145#0" expanded="true" />
-                <element signature="e#5213#5214#0" expanded="true" />
-                <element signature="e#5606#5607#0" expanded="true" />
-                <element signature="e#5675#5676#0" expanded="true" />
-                <element signature="e#6107#6108#0" expanded="true" />
-                <element signature="e#6172#6173#0" expanded="true" />
-                <element signature="e#6543#6544#0" expanded="true" />
-                <element signature="e#6608#6609#0" expanded="true" />
+                <element signature="method#CampoPListeners#0;class#PierreCalc#0" expanded="false" />
+                <element signature="class#4799:5218" expanded="false" />
+                <element signature="class#5261:5680" expanded="false" />
+                <element signature="method#CampoPLinhaListeners#0;class#PierreCalc#0" expanded="false" />
+                <element signature="method#ValidaTexto#0;class#PierreCalc#0" expanded="false" />
+                <element signature="method#MinimizaTeclado#0;class#PierreCalc#0" expanded="false" />
+                <element signature="method#AvisoDivZero#0;class#PierreCalc#0" expanded="false" />
+                <element signature="method#Mensagem#0;class#PierreCalc#0" expanded="false" />
+                <element signature="method#MensagemToast#0;class#PierreCalc#0" expanded="false" />
+                <element signature="method#CalculaP#0;class#PierreCalc#0" expanded="false" />
+                <element signature="method#CalculaPlinha#0;class#PierreCalc#0" expanded="false" />
+                <element signature="method#Resultado#0;class#PierreCalc#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Espelho.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/fisica/Espelho.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.63516486" vertical-offset="0" max-vertical-offset="680">
+              <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+              <folding>
+                <element signature="method#Espelho#0;class#Espelho#0" expanded="false" />
+                <element signature="method#Espelho#1;class#Espelho#0" expanded="false" />
+                <element signature="method#CalculaP#0;class#Espelho#0" expanded="false" />
+                <element signature="method#CalculaPlinha#0;class#Espelho#0" expanded="false" />
+                <element signature="method#TipoEspelho#0;class#Espelho#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -646,6 +663,7 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/pega_dado_pelinha.xml" />
         <option value="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-v21/values.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/fisica/PierreCalc.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/fisica/Espelho.java" />
       </list>
     </option>
   </component>
@@ -760,7 +778,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -779,10 +798,27 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApPierreLucie" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fisica" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -794,7 +830,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -992,7 +1028,11 @@
       <created>1424215966828</created>
       <updated>1424215966828</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Otimização do método ValidaTexto, englobando todas as validações dos campos.">
+      <created>1424216993605</created>
+      <updated>1424216993605</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1016,13 +1056,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1033,7 +1072,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23997134" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1047,6 +1086,7 @@
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1073,17 +1113,164 @@
     <MESSAGE value="Commit inicial.&#10;Projeto 80% pronto. Validações em sua grande parte feitas, faltando apenas impedir o calculo quando é digitado apenas o &quot; - &quot;. &#10;Próximo passo: Usar @strings e melhor interface.&#10;" />
     <MESSAGE value="k" />
     <MESSAGE value="Validação dos campos encapsulada dentro de um método." />
-    <option name="LAST_COMMIT_MESSAGE" value="Validação dos campos encapsulada dentro de um método." />
+    <MESSAGE value="Otimização do método ValidaTexto, englobando todas as validações dos campos." />
+    <option name="LAST_COMMIT_MESSAGE" value="Otimização do método ValidaTexto, englobando todas as validações dos campos." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/fisica/PierreCalc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1042" max-vertical-offset="2652">
+          <caret line="321" column="0" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
+          <folding>
+            <element signature="method#onCreate#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#onBackPressed#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#inicializaObjetos#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaMenu#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaP#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaPlinha#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#menuListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#PlinhaListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CampoPListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="class#4799:5218" expanded="false" />
+            <element signature="class#5261:5680" expanded="false" />
+            <element signature="method#CampoPLinhaListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#ValidaTexto#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#MinimizaTeclado#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#AvisoDivZero#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#Mensagem#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#MensagemToast#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CalculaP#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CalculaPlinha#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#Resultado#0;class#PierreCalc#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/fisica/PierreCalc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1042" max-vertical-offset="2652">
+          <caret line="321" column="0" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
+          <folding>
+            <element signature="method#onCreate#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#onBackPressed#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#inicializaObjetos#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaMenu#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaP#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaPlinha#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#menuListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#PlinhaListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CampoPListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="class#4799:5218" expanded="false" />
+            <element signature="class#5261:5680" expanded="false" />
+            <element signature="method#CampoPLinhaListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#ValidaTexto#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#MinimizaTeclado#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#AvisoDivZero#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#Mensagem#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#MensagemToast#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CalculaP#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CalculaPlinha#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#Resultado#0;class#PierreCalc#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/fisica/PierreCalc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1824" max-vertical-offset="2652">
+          <caret line="321" column="0" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
+          <folding>
+            <element signature="method#onCreate#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#onBackPressed#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#inicializaObjetos#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaMenu#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaP#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaPlinha#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#menuListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#PlinhaListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CampoPListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="class#4799:5218" expanded="false" />
+            <element signature="class#5261:5680" expanded="false" />
+            <element signature="method#CampoPLinhaListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#ValidaTexto#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#MinimizaTeclado#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#AvisoDivZero#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#Mensagem#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#MensagemToast#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CalculaP#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CalculaPlinha#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#Resultado#0;class#PierreCalc#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/fisica/PierreCalc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1824" max-vertical-offset="2652">
+          <caret line="321" column="0" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
+          <folding>
+            <element signature="method#onCreate#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#onBackPressed#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#inicializaObjetos#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaMenu#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaP#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaPlinha#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#menuListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#PlinhaListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CampoPListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="class#4799:5218" expanded="false" />
+            <element signature="class#5261:5680" expanded="false" />
+            <element signature="method#CampoPLinhaListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#ValidaTexto#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#MinimizaTeclado#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#AvisoDivZero#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#Mensagem#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#MensagemToast#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CalculaP#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CalculaPlinha#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#Resultado#0;class#PierreCalc#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/fisica/PierreCalc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2096" max-vertical-offset="2788">
+          <caret line="321" column="0" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
+          <folding>
+            <element signature="method#onCreate#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#onBackPressed#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#inicializaObjetos#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaMenu#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaP#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaPlinha#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#menuListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#PlinhaListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CampoPListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="class#4799:5218" expanded="false" />
+            <element signature="class#5261:5680" expanded="false" />
+            <element signature="method#CampoPLinhaListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#ValidaTexto#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#MinimizaTeclado#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#AvisoDivZero#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#Mensagem#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#MensagemToast#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CalculaP#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CalculaPlinha#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#Resultado#0;class#PierreCalc#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/import-summary.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1360">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1096,21 +1283,22 @@
             <element signature="method#onBackPressed#0;class#PierreCalc#0" expanded="false" />
             <element signature="method#inicializaObjetos#0;class#PierreCalc#0" expanded="false" />
             <element signature="method#chamaMenu#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaP#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaPlinha#0;class#PierreCalc#0" expanded="false" />
             <element signature="method#menuListeners#0;class#PierreCalc#0" expanded="false" />
-            <element signature="method#PListeners#0;class#PierreCalc#0" expanded="false" />
-            <element signature="e#3643#3759#0" expanded="true" />
-            <element signature="e#3753#3754#0" expanded="true" />
             <element signature="method#PlinhaListeners#0;class#PierreCalc#0" expanded="false" />
-            <element signature="e#3834#4565#0" expanded="true" />
-            <element signature="e#4559#4560#0" expanded="true" />
-            <element signature="e#5144#5145#0" expanded="true" />
-            <element signature="e#5213#5214#0" expanded="true" />
-            <element signature="e#5606#5607#0" expanded="true" />
-            <element signature="e#5675#5676#0" expanded="true" />
-            <element signature="e#6107#6108#0" expanded="true" />
-            <element signature="e#6172#6173#0" expanded="true" />
-            <element signature="e#6543#6544#0" expanded="true" />
-            <element signature="e#6608#6609#0" expanded="true" />
+            <element signature="method#CampoPListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="class#4799:5218" expanded="false" />
+            <element signature="class#5261:5680" expanded="false" />
+            <element signature="method#CampoPLinhaListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#ValidaTexto#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#MinimizaTeclado#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#AvisoDivZero#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#Mensagem#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#MensagemToast#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CalculaP#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CalculaPlinha#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#Resultado#0;class#PierreCalc#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1119,7 +1307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1360">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1132,21 +1319,22 @@
             <element signature="method#onBackPressed#0;class#PierreCalc#0" expanded="false" />
             <element signature="method#inicializaObjetos#0;class#PierreCalc#0" expanded="false" />
             <element signature="method#chamaMenu#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaP#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaPlinha#0;class#PierreCalc#0" expanded="false" />
             <element signature="method#menuListeners#0;class#PierreCalc#0" expanded="false" />
-            <element signature="method#PListeners#0;class#PierreCalc#0" expanded="false" />
-            <element signature="e#3643#3759#0" expanded="true" />
-            <element signature="e#3753#3754#0" expanded="true" />
             <element signature="method#PlinhaListeners#0;class#PierreCalc#0" expanded="false" />
-            <element signature="e#3834#4565#0" expanded="true" />
-            <element signature="e#4559#4560#0" expanded="true" />
-            <element signature="e#5144#5145#0" expanded="true" />
-            <element signature="e#5213#5214#0" expanded="true" />
-            <element signature="e#5606#5607#0" expanded="true" />
-            <element signature="e#5675#5676#0" expanded="true" />
-            <element signature="e#6107#6108#0" expanded="true" />
-            <element signature="e#6172#6173#0" expanded="true" />
-            <element signature="e#6543#6544#0" expanded="true" />
-            <element signature="e#6608#6609#0" expanded="true" />
+            <element signature="method#CampoPListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="class#4799:5218" expanded="false" />
+            <element signature="class#5261:5680" expanded="false" />
+            <element signature="method#CampoPLinhaListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#ValidaTexto#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#MinimizaTeclado#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#AvisoDivZero#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#Mensagem#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#MensagemToast#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CalculaP#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CalculaPlinha#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#Resultado#0;class#PierreCalc#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1155,7 +1343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="668" max-vertical-offset="1360">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1168,21 +1355,22 @@
             <element signature="method#onBackPressed#0;class#PierreCalc#0" expanded="false" />
             <element signature="method#inicializaObjetos#0;class#PierreCalc#0" expanded="false" />
             <element signature="method#chamaMenu#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaP#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaPlinha#0;class#PierreCalc#0" expanded="false" />
             <element signature="method#menuListeners#0;class#PierreCalc#0" expanded="false" />
-            <element signature="method#PListeners#0;class#PierreCalc#0" expanded="false" />
-            <element signature="e#3643#3759#0" expanded="true" />
-            <element signature="e#3753#3754#0" expanded="true" />
             <element signature="method#PlinhaListeners#0;class#PierreCalc#0" expanded="false" />
-            <element signature="e#3834#4565#0" expanded="true" />
-            <element signature="e#4559#4560#0" expanded="true" />
-            <element signature="e#5144#5145#0" expanded="true" />
-            <element signature="e#5213#5214#0" expanded="true" />
-            <element signature="e#5606#5607#0" expanded="true" />
-            <element signature="e#5675#5676#0" expanded="true" />
-            <element signature="e#6107#6108#0" expanded="true" />
-            <element signature="e#6172#6173#0" expanded="true" />
-            <element signature="e#6543#6544#0" expanded="true" />
-            <element signature="e#6608#6609#0" expanded="true" />
+            <element signature="method#CampoPListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="class#4799:5218" expanded="false" />
+            <element signature="class#5261:5680" expanded="false" />
+            <element signature="method#CampoPLinhaListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#ValidaTexto#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#MinimizaTeclado#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#AvisoDivZero#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#Mensagem#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#MensagemToast#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CalculaP#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CalculaPlinha#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#Resultado#0;class#PierreCalc#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1191,7 +1379,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1360">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1199,7 +1386,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1360">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1215,7 +1401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="692">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1223,7 +1408,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="692">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1231,7 +1415,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24566475" vertical-offset="0" max-vertical-offset="692">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1239,19 +1422,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="692">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pega_dado_p.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.6296296" vertical-offset="878" max-vertical-offset="1326">
           <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_launcher.png">
@@ -1260,25 +1442,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pega_dado_pelinha.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.6296296" vertical-offset="62" max-vertical-offset="1292">
           <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_pierre_calc.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_pierre_calc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.296296" vertical-offset="354" max-vertical-offset="731">
           <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -1293,7 +1475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07906977" vertical-offset="0" max-vertical-offset="430">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1301,7 +1482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.83639145" vertical-offset="150" max-vertical-offset="6018">
           <caret line="41" column="75" selection-start-line="41" selection-start-column="75" selection-end-line="41" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1309,34 +1489,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.9927535" vertical-offset="10453" max-vertical-offset="21080">
           <caret line="542" column="85" selection-start-line="542" selection-start-column="75" selection-end-line="542" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/fisica/PierreCalc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1300578" vertical-offset="0" max-vertical-offset="3604">
-          <caret line="91" column="28" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1211" max-vertical-offset="1666">
+          <caret line="347" column="32" selection-start-line="347" selection-start-column="32" selection-end-line="347" selection-end-column="32" />
           <folding>
             <element signature="method#onCreate#0;class#PierreCalc#0" expanded="false" />
             <element signature="method#onBackPressed#0;class#PierreCalc#0" expanded="false" />
             <element signature="method#inicializaObjetos#0;class#PierreCalc#0" expanded="false" />
             <element signature="method#chamaMenu#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaP#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#chamaPlinha#0;class#PierreCalc#0" expanded="false" />
             <element signature="method#menuListeners#0;class#PierreCalc#0" expanded="false" />
-            <element signature="method#PListeners#0;class#PierreCalc#0" expanded="false" />
-            <element signature="e#3643#3759#0" expanded="true" />
-            <element signature="e#3753#3754#0" expanded="true" />
             <element signature="method#PlinhaListeners#0;class#PierreCalc#0" expanded="false" />
-            <element signature="e#3834#4565#0" expanded="true" />
-            <element signature="e#4559#4560#0" expanded="true" />
-            <element signature="e#5144#5145#0" expanded="true" />
-            <element signature="e#5213#5214#0" expanded="true" />
-            <element signature="e#5606#5607#0" expanded="true" />
-            <element signature="e#5675#5676#0" expanded="true" />
-            <element signature="e#6107#6108#0" expanded="true" />
-            <element signature="e#6172#6173#0" expanded="true" />
-            <element signature="e#6543#6544#0" expanded="true" />
-            <element signature="e#6608#6609#0" expanded="true" />
+            <element signature="method#CampoPListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="class#4799:5218" expanded="false" />
+            <element signature="class#5261:5680" expanded="false" />
+            <element signature="method#CampoPLinhaListeners#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#ValidaTexto#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#MinimizaTeclado#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#AvisoDivZero#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#Mensagem#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#MensagemToast#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CalculaP#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#CalculaPlinha#0;class#PierreCalc#0" expanded="false" />
+            <element signature="method#Resultado#0;class#PierreCalc#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/fisica/Espelho.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63516486" vertical-offset="0" max-vertical-offset="680">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+          <folding>
+            <element signature="method#Espelho#0;class#Espelho#0" expanded="false" />
+            <element signature="method#Espelho#1;class#Espelho#0" expanded="false" />
+            <element signature="method#CalculaP#0;class#Espelho#0" expanded="false" />
+            <element signature="method#CalculaPlinha#0;class#Espelho#0" expanded="false" />
+            <element signature="method#TipoEspelho#0;class#Espelho#0" expanded="false" />
           </folding>
         </state>
       </provider>
