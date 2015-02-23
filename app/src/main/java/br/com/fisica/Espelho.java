@@ -37,7 +37,7 @@ public class Espelho {
         if(pontoFocal<0){
             tipo= "Espelho convexo ";
         }
-
+        return tipo;
     }
 
     public double getPontoImagem() {
