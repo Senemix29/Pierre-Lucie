@@ -122,14 +122,15 @@ public class PierreCalc extends Activity {
 					MinimizaTeclado();
 
 					String direcao, tam;
-					
 					direcao=""; tam="";
 					
 					String a = Val_Plinha.getText().toString();
 					double plinha = Double.parseDouble(a);
 					String b = Val_F_Plinha.getText().toString();
 					double fplinha = Double.parseDouble(b);
-					
+
+                    Espelho espelho = new Espelho(plinha,fplinha);
+
 					double p = CalculaP(plinha, fplinha);
 
 					if (((-plinha)/p)>0){

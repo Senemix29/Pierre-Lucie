@@ -15,21 +15,24 @@ public class Espelho {
         this.pontoImagem = pontoImagem;
         this.pontoFocal = pontoFocal;
     }
-    public Espelho(double pontoImagem, double pontoFocal, String hack) {
-        this.pontoImagem = pontoImagem;
+    public Espelho(double pontoObjeto, double pontoFocal, String hack) {
+        this.pontoObjeto = pontoObjeto;
         this.pontoFocal = pontoFocal;
     }
     public Espelho(double pontoFocal) {
         this.pontoFocal = pontoFocal;
     }
-    public double CalculaP(){
+
+    public void CalculaP(){
         pontoObjeto = (pontoFocal*pontoFocal)/(pontoImagem - pontoFocal) + pontoFocal;
-        return pontoObjeto;
+        defineImagem();
     }
-    public double CalculaPlinha(){
+
+    public void CalculaPlinha(){
         pontoImagem = (pontoFocal*pontoFocal)/(pontoObjeto - pontoFocal) + pontoFocal;
-        return pontoImagem;
+        defineImagem();
     }
+
     public String TipoEspelho(){
         if(pontoFocal>0){
             tipo= "Espelho concavo ";
@@ -38,6 +41,26 @@ public class Espelho {
             tipo= "Espelho convexo ";
         }
         return tipo;
+    }
+
+    private  void defineImagem(){
+
+        if (((-pontoImagem)/pontoObjeto)>0){
+            direcao=" Direita";
+        }
+        if (((-pontoImagem)/pontoObjeto)<0){
+            direcao=" Invertida";
+        }
+
+        if ((-pontoImagem)<pontoFocal){
+            tamanho=" Menor ";
+        }
+        else if((-pontoImagem)==pontoFocal){
+            tamanho=" Igual ";
+        }
+        else{
+            tamanho=" Maior ";
+        }
     }
 
     public double getPontoImagem() {
