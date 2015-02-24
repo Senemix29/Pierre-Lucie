@@ -23,17 +23,19 @@ public class Espelho {
         this.pontoFocal = pontoFocal;
     }
 
-    public void CalculaP(){
+    public void calculaP(){
         pontoObjeto = (pontoFocal*pontoFocal)/(pontoImagem - pontoFocal) + pontoFocal;
         defineImagem();
+        defineEspelho();
     }
 
-    public void CalculaPlinha(){
+    public void calculaPlinha(){
         pontoImagem = (pontoFocal*pontoFocal)/(pontoObjeto - pontoFocal) + pontoFocal;
         defineImagem();
+        defineEspelho();
     }
 
-    public String TipoEspelho(){
+    private String defineEspelho(){
         if(pontoFocal>0){
             tipo= "Espelho concavo ";
         }
@@ -43,7 +45,7 @@ public class Espelho {
         return tipo;
     }
 
-    private  void defineImagem(){
+    private void defineImagem(){
 
         if (((-pontoImagem)/pontoObjeto)>0){
             direcao=" Direita";
@@ -79,15 +81,12 @@ public class Espelho {
         return direcao;
     }
 
-    public void setDirecao(String direcao) {
-        this.direcao = direcao;
+    public String getTipo() {
+        return tipo;
     }
 
     public String getTamanho() {
         return tamanho;
     }
 
-    public void setTamanho(String tamanho) {
-        this.tamanho = tamanho;
-    }
 }

@@ -121,36 +121,15 @@ public class PierreCalc extends Activity {
 				public void onClick(View v) {
 					MinimizaTeclado();
 
-					String direcao, tam;
-					direcao=""; tam="";
-					
 					String a = Val_Plinha.getText().toString();
 					double plinha = Double.parseDouble(a);
 					String b = Val_F_Plinha.getText().toString();
 					double fplinha = Double.parseDouble(b);
 
                     Espelho espelho = new Espelho(plinha,fplinha);
-
-					double p = CalculaP(plinha, fplinha);
-
-					if (((-plinha)/p)>0){
-						direcao=" Direita";
-					}
-					if (((-plinha)/p)<0){
-						direcao=" Invertida";
-					}
-					
-					if ((-plinha)<p){
-						tam=" Menor ";
-					}
-					else if((-plinha)==p){
-						tam=" Igual ";
-					}
-					else{
-						tam=" Maior ";
-					}
-
-                    Resultado(txP,"P",fplinha,p,tam,direcao);
+                    espelho.calculaP();
+                    Resultado(txP, "P", espelho.getPontoObjeto(),
+                            espelho.getTamanho(), espelho.getDirecao(), espelho.getTipo());
 
 				}
 			});
@@ -171,33 +150,16 @@ public class PierreCalc extends Activity {
 				public void onClick(View v) {
                     MinimizaTeclado();
 
-					String direcao,tam;
-					direcao=""; tam="";
 					String a = Val_P.getText().toString();
 					double p = Double.parseDouble(a);
 					String b = Val_F_P.getText().toString();
 					double f = Double.parseDouble(b);
-					
-					double plinha = CalculaPlinha(p, f);
 
-					if (((-plinha)/p)>0){
-						direcao=" Direita";
-					}
-					if (((-plinha)/p)<0){
-						direcao=" Invertida";
-					}
-					
-					if ((-plinha)<p){
-						tam=" Menor ";
-					}
-					else if((-plinha)==p){
-						tam=" Igual ";
-					}
-					else{
-						tam=" Maior ";
-					}
-					
-					Resultado(txPlinha,"P'",f,plinha,tam,direcao);
+                    Espelho espelho = new Espelho(p,f,"burlando o Construtor!");
+                    espelho.calculaPlinha();
+
+					Resultado(txPlinha,"P'",espelho.getPontoImagem(),
+                            espelho.getTamanho(), espelho.getDirecao(), espelho.getTipo());
 				}
 			});
 			btVolta2.setOnClickListener(new View.OnClickListener() {
@@ -333,28 +295,9 @@ public class PierreCalc extends Activity {
         Toast toast = Toast.makeText(getBaseContext(), msg, Toast.LENGTH_SHORT);
         toast.show();
     }
-	
-	public double CalculaP(double p_linha, double f){
-		double p;
-		p = (f*f)/(p_linha - f) + f;
-		return p;
-	}
 
-	public double CalculaPlinha(double p, double f){
-		double p_linha;
-		p_linha = (f*f)/(p - f) + f;
-		return p_linha;
-	}
-
-    public void Resultado(TextView Tx,String P_ou_Plinha, double f,double PimagemPvirtual,String tam, String direcao ){
-        String espelho="";
-        if(f>0){
-            espelho= "Espelho concavo ";
-        }
-        if(f<0){
-            espelho= "Espelho convexo ";
-        }
-
+    public void Resultado(TextView Tx,String P_ou_Plinha,double PimagemPvirtual,String tam, String direcao, String espelho ){
+        //Com os dados previamente gerados pelo objeto espelho, pega os mesmos e mostra num Textview
         Tx.setText("Valor de " + P_ou_Plinha + " = " + String.valueOf(PimagemPvirtual) + "\nImagem " + tam +
                 direcao + "\n" + espelho);
     }
