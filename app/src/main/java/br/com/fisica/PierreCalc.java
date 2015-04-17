@@ -11,7 +11,9 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
 
 
 public class PierreCalc extends Activity {
@@ -292,8 +294,7 @@ public class PierreCalc extends Activity {
 	}
 
     public void MensagemToast(String msg){
-        Toast toast = Toast.makeText(getBaseContext(), msg, Toast.LENGTH_SHORT);
-        toast.show();
+        Crouton.showText(this, msg, Style.INFO);
     }
 
     public void Resultado(TextView Tx,String P_ou_Plinha,double PimagemPvirtual,String tam, String direcao, String espelho ){

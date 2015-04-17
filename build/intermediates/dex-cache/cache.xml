@@ -23,6 +23,13 @@
         <dex dex="C:\Users\Natan\AndroidstudioProjects\ApPierreLucie\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-595d0275e03ed44e5fc865b538a26cda00f78f33.jar" />
     </item>
     <item
+        jar="C:\Users\Natan\AndroidstudioProjects\ApPierreLucie\app\build\intermediates\exploded-aar\de.keyboardsurfer.android.widget\crouton\1.8.5\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b81c788c5f175f94ddaac2f65e5d1726371e0963">
+        <dex dex="C:\Users\Natan\AndroidstudioProjects\ApPierreLucie\app\build\intermediates\pre-dexed\debug\classes-7fd85762bdb99b14e34947d7cc0835072d6d8417.jar" />
+    </item>
+    <item
         jar="C:\Users\Natan\AndroidstudioProjects\ApPierreLucie\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
         jumboMode="false"
         revision="21.1.2"
