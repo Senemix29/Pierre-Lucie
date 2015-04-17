@@ -20,15 +20,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: br.com.fisica" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f52697e8-64df-4583-80ba-201fcb0ffa4c" name="Default" comment="Troca do uso do Toast pelo uso de Crouton. &#10;Foi adicionado a library, no projeto, através do Gradle.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/crouton_1_8_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/fisica/PierreCalc.java" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/fisica/PierreCalc.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/tmp/dex/debug/inputList.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/tmp/dex/debug/inputList.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_21_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_21_0_3.xml" />
+    <list default="true" id="f52697e8-64df-4583-80ba-201fcb0ffa4c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ApPierreLucie.iws" />
@@ -1046,7 +1038,11 @@
       <created>1424752938446</created>
       <updated>1424752938446</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Troca do uso do Toast pelo uso de Crouton. &#10;Foi adicionado a library, no projeto, através do Gradle.">
+      <created>1429240628927</created>
+      <updated>1429240628927</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
