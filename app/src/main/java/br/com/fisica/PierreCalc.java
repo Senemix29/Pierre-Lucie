@@ -17,7 +17,7 @@ import de.keyboardsurfer.android.widget.crouton.Style;
 
 
 public class PierreCalc extends Activity {
-	Button btP, btPlinha, btCalcP, btCalcPlinha, btVolta1, btVolta2;
+	Button btP, btPlinha, btCalcP, btCalcPlinha, btVolta1, btVolta2,btGrafico;
 	EditText Val_F_P, Val_F_Plinha, Val_P, Val_Plinha;
 	TextView txP, txPlinha;
     String viewAtual="";
@@ -51,12 +51,14 @@ public class PierreCalc extends Activity {
 			btCalcPlinha = (Button) findViewById(R.id.btCalcPlinha);
 			btVolta1 = (Button) findViewById(R.id.btVolta1);
 			btVolta2 = (Button) findViewById(R.id.btVolta2);
-			Val_F_P = (EditText) findViewById(R.id.Val_F_P);
+			btGrafico = (Button) findViewById(R.id.btGrafico);
+            Val_F_P = (EditText) findViewById(R.id.Val_F_P);
 			Val_F_Plinha = (EditText) findViewById(R.id.Val_F_Plinha);
 			Val_P = (EditText) findViewById(R.id.Val_P);
 			Val_Plinha = (EditText) findViewById(R.id.Val_Plinha);
 			txP = (TextView) findViewById(R.id.txP);
 			txPlinha = (TextView) findViewById(R.id.txPlinha);
+
 	}
 		
 	public void chamaMenu(){
@@ -88,6 +90,7 @@ public class PierreCalc extends Activity {
 			setContentView(R.layout.pega_dado_pelinha);
 			inicializaObjetos();
 			PlinhaListeners();
+            btGrafico.setVisibility(View.INVISIBLE);
 			btCalcPlinha.setEnabled(false);
 			CampoPLinhaListeners();
 
@@ -132,7 +135,7 @@ public class PierreCalc extends Activity {
                     espelho.calculaP();
                     Resultado(txP, "P", espelho.getPontoObjeto(),
                             espelho.getTamanho(), espelho.getDirecao(), espelho.getTipo());
-
+                    btGrafico.setVisibility(View.VISIBLE);
 				}
 			});
 			btVolta1.setOnClickListener(new View.OnClickListener() {
