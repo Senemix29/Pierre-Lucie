@@ -8,14 +8,6 @@
         android:minSdkVersion="19"
         android:targetSdkVersion="21" />
 
-    <android:uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <android:uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher123"
@@ -33,7 +25,12 @@
         </activity>
         <activity
             android:name=".GraphActivity"
-            android:label="@string/title_activity_graph" >
+            android:label="@string/title_activity_graph"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="br.com.fisica.GraphActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
         </activity>
     </application>
 

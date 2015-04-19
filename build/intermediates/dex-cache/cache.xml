@@ -16,6 +16,13 @@
         <dex dex="C:\Users\Natan\AndroidstudioProjects\ApPierreLucie\app\build\intermediates\pre-dexed\debug\classes-2e9e5d85a64ef0a796cd41b2ff100adae83c1929.jar" />
     </item>
     <item
+        jar="C:\Users\Natan\AndroidstudioProjects\ApPierreLucie\app\build\intermediates\exploded-aar\com.jjoe64\graphview\4.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ae24ad61a573cd1faf8261f5ec6d8f0cb58ddaad">
+        <dex dex="C:\Users\Natan\AndroidstudioProjects\ApPierreLucie\app\build\intermediates\pre-dexed\debug\classes-b367379aaf9f2b73b1b33dcc073bcde45c41ff92.jar" />
+    </item>
+    <item
         jar="C:\Program Files\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -23,18 +30,18 @@
         <dex dex="C:\Users\Natan\AndroidstudioProjects\ApPierreLucie\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-595d0275e03ed44e5fc865b538a26cda00f78f33.jar" />
     </item>
     <item
-        jar="C:\Users\Natan\AndroidstudioProjects\ApPierreLucie\app\build\intermediates\exploded-aar\de.keyboardsurfer.android.widget\crouton\1.8.5\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="b81c788c5f175f94ddaac2f65e5d1726371e0963">
-        <dex dex="C:\Users\Natan\AndroidstudioProjects\ApPierreLucie\app\build\intermediates\pre-dexed\debug\classes-7fd85762bdb99b14e34947d7cc0835072d6d8417.jar" />
-    </item>
-    <item
         jar="C:\Users\Natan\AndroidstudioProjects\ApPierreLucie\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
         <dex dex="C:\Users\Natan\AndroidstudioProjects\ApPierreLucie\app\build\intermediates\pre-dexed\debug\classes-536489802289f9287646d59c1bea4cc33d8ac8a1.jar" />
+    </item>
+    <item
+        jar="C:\Users\Natan\AndroidstudioProjects\ApPierreLucie\app\build\intermediates\exploded-aar\de.keyboardsurfer.android.widget\crouton\1.8.5\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b81c788c5f175f94ddaac2f65e5d1726371e0963">
+        <dex dex="C:\Users\Natan\AndroidstudioProjects\ApPierreLucie\app\build\intermediates\pre-dexed\debug\classes-7fd85762bdb99b14e34947d7cc0835072d6d8417.jar" />
     </item>
 
 </items>

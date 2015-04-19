@@ -3,6 +3,7 @@ package br.com.fisica;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -33,7 +34,7 @@ public class PierreCalc extends Activity {
         if (viewAtual.equals("Menu")) {
             cont++;
             if (cont==2){
-               MensagemToast("Pressione novamente para sair");
+               MensagemCrouton("Pressione novamente para sair");
             }
             else{
                 super.onBackPressed();
@@ -135,7 +136,6 @@ public class PierreCalc extends Activity {
                     espelho.calculaP();
                     Resultado(txP, "P", espelho.getPontoObjeto(),
                             espelho.getTamanho(), espelho.getDirecao(), espelho.getTipo());
-                    btGrafico.setVisibility(View.VISIBLE);
 				}
 			});
 			btVolta1.setOnClickListener(new View.OnClickListener() {
@@ -165,6 +165,7 @@ public class PierreCalc extends Activity {
 
 					Resultado(txPlinha,"P'",espelho.getPontoImagem(),
                             espelho.getTamanho(), espelho.getDirecao(), espelho.getTipo());
+                    btGrafico.setVisibility(View.VISIBLE);
 				}
 			});
 			btVolta2.setOnClickListener(new View.OnClickListener() {
@@ -175,6 +176,16 @@ public class PierreCalc extends Activity {
 					
 				}
 			});
+        btGrafico.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    startActivity(new Intent("br.com.fisica.GraphActivity"));
+                } catch(Exception e){
+                    MensagemCrouton("Erro");
+                }
+           }
+        });
 		
 	}
 
@@ -296,7 +307,7 @@ public class PierreCalc extends Activity {
 		mensagem.show();
 	}
 
-    public void MensagemToast(String msg){
+    public void MensagemCrouton(String msg){
         Crouton.showText(this, msg, Style.INFO);
     }
 
